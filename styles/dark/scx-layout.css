@@ -1,0 +1,16 @@
+/* 这里重写布局所用的 css 变量 */
+html.dark {
+
+    /* 输入框 */
+    --scx-input_bg: rgba(255, 255, 255, 0.2);
+    --scx-input_box-shadow: rgba(180, 180, 180, 0.6) 0 0 1px 1px;
+    --scx-input-hover_box-shadow: rgba(44, 170, 46, 0.6) 0 0 2px 2px;
+
+    /* scx-panel 组件 */
+    --scx-panel-item_bg: rgba(255, 255, 255, 0.2);
+    --scx-panel-item_border-color: transparent;
+    --scx-panel-item_hover-bg: rgb(72, 147, 73);
+    --scx-panel-item_hover-border-color: transparent;
+    --scx-panel-item_hover-color: whitesmoke;
+
+}
