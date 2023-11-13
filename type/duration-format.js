@@ -1,4 +1,4 @@
-import dayjs from "dayjs";
+import dayjs from "dayjs/esm/index.js";
 import duration from "dayjs/plugin/duration";
 
 dayjs.extend(duration);

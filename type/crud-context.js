@@ -3,7 +3,7 @@ import {useScxReq, useScxUserInfo} from "scx-ui/vue-component";
 import {ScxIcon} from "scx-ui/vue-component/index.js";
 import {ElMessage, ElNotification} from "element-plus";
 import {h, nextTick} from "vue";
-import dayjs from "dayjs";
+import dayjs from "dayjs/esm/index.js";
 
 /**
  *  crud 上下文 , 方便操作进行简单的页面 crud

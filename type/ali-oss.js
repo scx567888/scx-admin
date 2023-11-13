@@ -1,5 +1,5 @@
 import {formatFileSize, joinURL, ScxFSS} from "scx-ui";
-import dayjs from "dayjs";
+import dayjs from "dayjs/esm/index.js";
 import {inject} from "vue";
 
 /**
