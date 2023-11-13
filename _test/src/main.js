@@ -17,7 +17,7 @@ import {
     ScxUserInfo,
     ScxUserInfoVueInstaller,
 } from "scx-ui"; // 注册图标
-import {Components} from "../../components/index.js";
+import {ScxAdminComponent} from "../../components/index.js";
 import App from "./App.vue";
 import "scx-ui/style/normalize.css"; // 主题
 import "scx-ui/style/default.css"; // 主题
@@ -60,7 +60,7 @@ createApp(App)
         .use(ElementPlus)
         .use(scxRouter.getVueRouter())
         .use(ScxComponent)
-        .use(Components)
+        .use(ScxAdminComponent)
         .use(new ScxReqVueInstaller(req))
         .use(new ScxFSSVueInstaller(fss))
         .use(new ScxUserInfoVueInstaller(userInfo))
