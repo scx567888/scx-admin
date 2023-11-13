@@ -3,7 +3,7 @@
         <h1>
             Home
             <scx-icon icon="book"></scx-icon>
-            {{daojishi(a)}}
+            {{ daojishi(a) }}
         </h1>
     </div>
 
@@ -14,7 +14,7 @@ import dayjs from "dayjs/esm/index.js";
 import {durationFormat} from "../../../type/duration-format.js";
 import {ref} from "vue";
 
-const a= new Date().getTime()+1000000;
+const a = new Date().getTime() + 1000000;
 
 const nowTime = ref(new Date());
 
