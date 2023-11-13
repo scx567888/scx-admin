@@ -50,7 +50,7 @@ const components = [
 
 const directives = [];
 
-const Components = {
+const ScxAdminComponent = {
 
     install(app) {
         //安装组件
@@ -61,5 +61,5 @@ const Components = {
 };
 
 export {
-    Components,
+    ScxAdminComponent,
 };
