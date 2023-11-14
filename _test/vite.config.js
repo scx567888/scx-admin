@@ -31,8 +31,5 @@ export default {
         vuePlugin(),
         scxIconPluginUseJS(iconDir()),
         ckeditor5({theme: require.resolve("@ckeditor/ckeditor5-theme-lark")}),
-    ],
-    optimizeDeps: {
-        include: ["spark-md5"],
-    },
+    ]
 };
