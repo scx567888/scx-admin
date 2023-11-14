@@ -22,6 +22,8 @@ import EasyUpload from "./easy/easy-upload.vue";
 import EasyUploadList from "./easy/easy-upload-list.vue";
 import QRCode from "./qr-code/index.vue";
 import UserProfile from "./user-profile/index.vue";
+import ScxPanel from "./scx-panel.vue";
+import ScxPanelItem from "./scx-panel-item.vue";
 
 
 const components = [
@@ -48,6 +50,8 @@ const components = [
     EasyUploadList,
     QRCode,
     UserProfile,
+    ScxPanel,
+    ScxPanelItem,
 ];
 
 const directives = [];
