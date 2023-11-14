@@ -5,43 +5,43 @@
 <script>
 import "tinymce/tinymce"; // tinymce
 import "tinymce-i18n/langs6/zh-Hans.js"; // 引入国际化文件
-import "tinymce/themes/silver"; // 编辑器主题 因为在此处已经引入所以在 init 中我们需要关闭 skin
-import "tinymce/icons/default"; // 引入编辑器图标icon
-import "tinymce/models/dom"; //dom
+import "tinymce/themes/silver/theme.js"; // 编辑器主题 因为在此处已经引入所以在 init 中我们需要关闭 skin
+import "tinymce/icons/default/icons.js"; // 引入编辑器图标icon
+import "tinymce/models/dom/model.js"; //dom
 import "tinymce/skins/ui/oxide/skin.css"; //编辑器 css
 import c from "tinymce/skins/ui/oxide/content.css?inline"; //编辑器内容区域的 css
 import c1 from "tinymce/skins/content/default/content.css?inline"; //编辑器内容区域的 css
 //以下都是插件
-import "tinymce/plugins/advlist"; //高级列表
-import "tinymce/plugins/anchor"; //锚点
-import "tinymce/plugins/autolink"; //自动链接
-import "tinymce/plugins/autoresize"; //编辑器高度自适应,注：plugins里引入此插件时，Init里设置的height将失效
-import "tinymce/plugins/autosave"; //自动存稿
-import "tinymce/plugins/charmap"; //特殊字符
-import "tinymce/plugins/code"; //编辑源码
-import "tinymce/plugins/codesample"; //代码示例
-import "tinymce/plugins/directionality"; //文字方向
-import "tinymce/plugins/emoticons"; //表情
+import "tinymce/plugins/advlist/plugin.js"; //高级列表
+import "tinymce/plugins/anchor/plugin.js"; //锚点
+import "tinymce/plugins/autolink/plugin.js"; //自动链接
+import "tinymce/plugins/autoresize/plugin.js"; //编辑器高度自适应,注：plugins里引入此插件时，Init里设置的height将失效
+import "tinymce/plugins/autosave/plugin.js"; //自动存稿
+import "tinymce/plugins/charmap/plugin.js"; //特殊字符
+import "tinymce/plugins/code/plugin.js"; //编辑源码
+import "tinymce/plugins/codesample/plugin.js"; //代码示例
+import "tinymce/plugins/directionality/plugin.js"; //文字方向
+import "tinymce/plugins/emoticons/plugin.js"; //表情
 import "tinymce/plugins/emoticons/js/emojis"; //表情插件需要的
-import "tinymce/plugins/fullscreen"; //全屏
-import "tinymce/plugins/help"; //帮助
-import "tinymce/plugins/image"; //插入编辑图片
-import "tinymce/plugins/importcss"; //引入css
-import "tinymce/plugins/insertdatetime"; //插入日期时间
-import "tinymce/plugins/link"; //超链接
-import "tinymce/plugins/lists"; //列表插件
-import "tinymce/plugins/media"; //插入编辑媒体
-import "tinymce/plugins/nonbreaking"; //插入不间断空格
-import "tinymce/plugins/pagebreak"; //插入分页符
-import "tinymce/plugins/preview"; //预览
-import "tinymce/plugins/quickbars"; //快速工具栏
-import "tinymce/plugins/save"; //保存
-import "tinymce/plugins/searchreplace"; //查找替换
-import "tinymce/plugins/table"; //表格
-import "tinymce/plugins/template"; //内容模板
-import "tinymce/plugins/visualblocks"; //显示元素范围
-import "tinymce/plugins/visualchars"; //显示不可见字符
-import "tinymce/plugins/wordcount"; //字数统计
+import "tinymce/plugins/fullscreen/plugin.js"; //全屏
+import "tinymce/plugins/help/plugin.js"; //帮助
+import "tinymce/plugins/image/plugin.js"; //插入编辑图片
+import "tinymce/plugins/importcss/plugin.js"; //引入css
+import "tinymce/plugins/insertdatetime/plugin.js"; //插入日期时间
+import "tinymce/plugins/link/plugin.js"; //超链接
+import "tinymce/plugins/lists/plugin.js"; //列表插件
+import "tinymce/plugins/media/plugin.js"; //插入编辑媒体
+import "tinymce/plugins/nonbreaking/plugin.js"; //插入不间断空格
+import "tinymce/plugins/pagebreak/plugin.js"; //插入分页符
+import "tinymce/plugins/preview/plugin.js"; //预览
+import "tinymce/plugins/quickbars/plugin.js"; //快速工具栏
+import "tinymce/plugins/save/plugin.js"; //保存
+import "tinymce/plugins/searchreplace/plugin.js"; //查找替换
+import "tinymce/plugins/table/plugin.js"; //表格
+import "tinymce/plugins/template/plugin.js"; //内容模板
+import "tinymce/plugins/visualblocks/plugin.js"; //显示元素范围
+import "tinymce/plugins/visualchars/plugin.js"; //显示不可见字符
+import "tinymce/plugins/wordcount/plugin.js"; //字数统计
 import Editor from "@tinymce/tinymce-vue"; //官方的 vue 插件
 import {computed} from "vue";
 import {useScxFSS} from "scx-ui/vue-component";
