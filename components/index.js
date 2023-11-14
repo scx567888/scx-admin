@@ -13,6 +13,7 @@ import CrudTableDeleteButton from "./crud/crud-table-delete-button.vue";
 import CrudTableEditButton from "./crud/crud-table-edit-button.vue";
 import EasyFormItem from "./easy/easy-form-item.vue";
 import EasyImage from "./easy/easy-image.vue";
+import EasyMonacoEditor from "./easy/easy-monaco-editor.vue";
 import EasySelect from "./easy/easy-select.vue";
 import EasyCKEditor from "./easy/easy-ckeditor.vue";
 import EasyCKEditorLazy from "./easy/easy-ckeditor-lazy.vue";
@@ -40,6 +41,7 @@ const components = [
     EasyCKEditorLazy,
     EasyFormItem,
     EasyImage,
+    EasyMonacoEditor,
     EasySelect,
     EasyTinymce,
     EasyUpload,
