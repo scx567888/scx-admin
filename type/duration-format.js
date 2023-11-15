@@ -1,5 +1,5 @@
 import dayjs from "dayjs/esm/index.js";
-import duration from "dayjs/plugin/duration";
+import duration from "dayjs/esm/plugin/duration/index.js";
 
 dayjs.extend(duration);
 
