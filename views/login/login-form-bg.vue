@@ -29,11 +29,6 @@
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.3);
 }
 
-/*登录页所有的图标颜色*/
-.login-form-bg .scx-icon {
-    fill: whitesmoke;
-}
-
 /*登录标题*/
 .title-container {
     margin-bottom: 10px;

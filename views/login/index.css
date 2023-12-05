@@ -1,5 +1,10 @@
 /*----------------强制设置第三方组件在登录页的样式----------------*/
 
+/*登录页所有的图标颜色*/
+.login-form-bg .scx-icon {
+    fill: whitesmoke;
+}
+
 .login-form-bg.loginTab {
     height: 309px;
 }
