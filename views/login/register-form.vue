@@ -32,8 +32,7 @@
             </el-input>
         </el-form-item>
 
-        <el-button :loading="registerForm.registerBtnLoading" style="width: 100%" type="success"
-                   @click="onRegister">
+        <el-button :loading="registerForm.registerBtnLoading" style="width: 100%" type="success" @click="onRegister">
             注册
         </el-button>
 
@@ -42,14 +41,11 @@
 <script setup>
 import {reactive, ref} from "vue";
 import {ElMessage} from "element-plus";
-import {useScxAuth, useScxRouter} from "../../type/index.js";
 import {useScxReq} from "scx-ui";
 
 const emit = defineEmits(["register-success"]);
 
-const auth = useScxAuth();
 const req = useScxReq();
-const scxRouter = useScxRouter();
 
 const registerUsernameRef = ref(null);
 
