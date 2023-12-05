@@ -1,13 +1,13 @@
 <template>
-    <div class="dept-perms-wrapper">
+    <div class="role-perms-wrapper">
 
         <div v-if="!data || data.id === -1 || data.id === -2" class="no-data">
-            未选中任何部门
+            未选中任何角色
         </div>
 
-        <div v-else class="dept-perms">
+        <div v-else class="role-perms">
 
-            <span class="big-font">部门名称</span>
+            <span class="big-font">角色名称</span>
 
             <el-input v-model="data.name"/>
 
@@ -50,7 +50,7 @@ import {computed, nextTick, onMounted, ref, watch} from "vue";
 import {deepCopy, useScxReq} from "scx-ui";
 
 export default {
-    name: "dept-perms",
+    name: "role-perms",
     props: {
         data: {}
     },
@@ -94,7 +94,7 @@ export default {
             const key2 = pageTreeRef.value.getHalfCheckedKeys();
             const updateModel = deepCopy(props.data);
             updateModel.pagePerms = key1.concat(key2);
-            req.put("api/crud/dept", {updateModel}).then(data => {
+            req.put("api/crud/role", {updateModel}).then(data => {
                 ElMessage({
                     type: "success",
                     message: data.name + " : 更新成功!",
@@ -145,7 +145,7 @@ export default {
 </script>
 
 <style scoped>
-.dept-perms-wrapper {
+.role-perms-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,7 +161,7 @@ export default {
     align-items: center;
 }
 
-.dept-perms {
+.role-perms {
     display: flex;
     flex-direction: column;
     justify-content: center;
