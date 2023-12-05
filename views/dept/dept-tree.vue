@@ -127,7 +127,7 @@ export default {
 
         function infoHandler(data) {
             for (let valueElement of data) {
-                req.post("api/user/count", {
+                req.post("api/dept/user-count", {
                     id: valueElement.id,
                     type: valueElement.type
                 }).then(co => {
