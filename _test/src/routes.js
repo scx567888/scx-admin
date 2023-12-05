@@ -7,7 +7,7 @@ const routes = [
     {
         path: "/login",
         name: "login",
-        component: () => import("./views/login/index.vue"),
+        component: () => import("../../views/login/login-and-register.vue"),
         meta: {
             title: "登录",
             icon: "dashboard",
@@ -174,6 +174,24 @@ const routes = [
                     icon: "outlined-ordered-list",
                 },
                 component: () => import("./views/d.vue"),
+            },
+            {
+                path: "dept",
+                name: "dept",
+                meta: {
+                    title: "部门管理",
+                    icon: "outlined-ordered-list",
+                },
+                component: () => import("../../views/dept/index.vue"),
+            },
+            {
+                path: "role",
+                name: "role",
+                meta: {
+                    title: "角色管理",
+                    icon: "outlined-ordered-list",
+                },
+                component: () => import("../../views/role/index.vue"),
             },
         ],
     },
