@@ -59,8 +59,8 @@
 </template>
 
 <script>
-import {deepCopy, getUUID, isBlank, listToTree, showContextMenu, useScxReq} from "scx-ui";
 import {onMounted, ref, watch} from "vue";
+import {deepCopy, getUUID, isBlank, listToTree, showContextMenu, useScxReq} from "scx-ui";
 import {ElMessage, ElMessageBox} from "element-plus";
 
 export default {

@@ -229,7 +229,7 @@ export default {
             if (isBlank(info.value.name)) {
                 ElMessage({
                     type: "error",
-                    message: "量表类型名称不能为空!",
+                    message: "部门名称不能为空!",
                 });
                 return;
             }
