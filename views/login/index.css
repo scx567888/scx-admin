@@ -1,7 +1,7 @@
 /*----------------强制设置第三方组件在登录页的样式----------------*/
 
 .login-form-bg.loginTab {
-    height: 305px;
+    height: 309px;
 }
 
 .login-form-bg.loginTab.needAnimation .el-tabs__content {
@@ -20,7 +20,7 @@
 }
 
 .login-form-bg.registerTab {
-    height: 365px;
+    height: 369px;
 }
 
 .login-form-bg.registerTab.needAnimation .el-tabs__content {

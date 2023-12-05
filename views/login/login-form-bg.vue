@@ -2,7 +2,7 @@
     <div class="login-form-bg">
         <!-- 上面的说明文字 -->
         <div class="title-container">
-            <scx-icon icon="filled-scx-logo"/>
+            <scx-icon icon="outlined-scx-logo"/>
             <span>系统登录</span>
         </div>
         <slot/>
@@ -36,7 +36,7 @@
 
 /*登录标题*/
 .title-container {
-    margin-bottom: 1%;
+    margin-bottom: 10px;
     position: relative;
 }
 
