@@ -83,7 +83,7 @@ export default {
     background-color: var(--scx-bg);
 }
 
-.el-sub-menu.is-active .el-sub-menu__title,
+.el-sub-menu.is-active > .el-sub-menu__title,
 .el-menu-item.is-active {
     font-weight: 600;
     color: var(--scx-theme);
