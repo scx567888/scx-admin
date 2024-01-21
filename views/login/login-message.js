@@ -12,6 +12,7 @@ class LoginMessage {
         licenseError: "系统错误 !!!",
         noPermission: "您没有权限进行该操作 !!!",
         "Failed to fetch": "网络错误 !!!",
+        "username-already-exists": "用户名已被占用 !!!",
     };
 
     t(m) {
