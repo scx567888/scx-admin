@@ -29,7 +29,7 @@ export default {
     setup(props, context) {
         const req = useScxReq();
 
-        //左侧部门树的 ref
+        //左侧角色树的 ref
         const roleTreeRef = ref();
         //过滤文字
         const filterText = ref("");
@@ -41,10 +41,10 @@ export default {
             return data.name.indexOf(value) !== -1;
         }
 
-        //列表结构的部门数据
+        //列表结构的角色数据
         const listData = ref([]);
 
-        //根据列表生成的 树形结构的部门数据 (用来给 element ui 使用)
+        //根据列表生成的 树形结构的角色数据 (用来给 element ui 使用)
         const realTreeData = computed(() => [{
             id: "-1",
             name: "角色管理",
@@ -52,7 +52,7 @@ export default {
         }]);
 
         /**
-         * 获取部门数据 本质上就是从后台查询所有部门并赋值给 listData
+         * 获取角色数据 本质上就是从后台查询所有角色并赋值给 listData
          * 转换成树结构的操作会由 vue 的 computed 自动处理
          */
         function getTreeData() {

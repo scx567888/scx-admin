@@ -40,10 +40,10 @@
 
         </el-tree>
 
-        <el-dialog v-model="showEditDialog" title="编辑部门名称" width="70%">
+        <el-dialog v-model="showEditDialog" title="编辑角色名称" width="70%">
 
             <el-form :model="info">
-                <el-form-item :use-model="true" label="部门名称 : " prop="name" style="width: 100%">
+                <el-form-item :use-model="true" label="角色名称 : " prop="name" style="width: 100%">
                     <el-input v-model="info.name"/>
                 </el-form-item>
             </el-form>
@@ -186,7 +186,7 @@ export default {
             //如果是最顶级节点的就不添加 parentID
             const newInfo = {
                 //默认的新建量表类型名称
-                name: "新建部门_" + getUUID().substring(0, 6),
+                name: "新建角色_" + getUUID().substring(0, 6),
                 pagePerms: [],
                 perms: [],
                 pageElementPerms: [],
@@ -243,7 +243,7 @@ export default {
 
         function remove(data) {
             //根据有没有子节点弄一个友好的提示消息
-            const title = data.children ? " 此操作将永久删除此部门及其所有子部门, 是否继续?" : " 此操作将永久删除此部门, 是否继续?";
+            const title = data.children ? " 此操作将永久删除此角色及其所有子角色, 是否继续?" : " 此操作将永久删除此角色, 是否继续?";
             //打开提示框
             ElMessageBox.confirm(title, "提示", {
                 confirmButtonText: "确定",
