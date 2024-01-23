@@ -41,7 +41,7 @@
     "@ckeditor/ckeditor5-remove-format": "^41.0.0",
     "@ckeditor/ckeditor5-source-editing": "^40.1.0",
     "@ckeditor/ckeditor5-special-characters": "^40.1.0",
-    "@ckeditor/ckeditor5-table": "^40.1.0",
+    "@ckeditor/ckeditor5-table": "^41.0.0",
     "@ckeditor/ckeditor5-typing": "^40.1.0",
     "@ckeditor/ckeditor5-vue": "^5.1.0",
     "@ckeditor/ckeditor5-word-count": "^41.0.0",
