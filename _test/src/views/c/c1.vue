@@ -8,6 +8,7 @@
 
 <script setup>
 import {ref} from "vue";
+import QrCode from "../../../../components/qr-code/index.vue";
 
 const text = ref();
 const pauseQRCode = ref(false);

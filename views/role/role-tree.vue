@@ -194,7 +194,7 @@ export default {
                 parentID: parentID
             };
             //向数据库添加
-            req.post("api/crud/role", newInfo).then(res => {
+            req.post("api/role", newInfo).then(res => {
                 ElMessage({
                     type: "success",
                     message: res.name + " : 添加成功!",
@@ -226,7 +226,7 @@ export default {
                 });
                 return;
             }
-            req.put("api/crud/role", {updateModel: info.value}).then(data => {
+            req.put("api/role", {updateModel: info.value}).then(data => {
                 ElMessage({
                     type: "success",
                     message: data.name + " : 更新成功!",
@@ -289,7 +289,7 @@ export default {
             const dropData = dropNode.data;
             if (type === "inner") {
                 dragData.parentID = dropData.id;
-                req.put("api/crud/role", {updateModel: dragData}).then(data => {
+                req.put("api/role", {updateModel: dragData}).then(data => {
                     refreshListData();
                     ElMessage({
                         type: "success",
@@ -333,7 +333,7 @@ export default {
         }
 
         function refreshListData() {
-            req.post("api/crud/role/list", {
+            req.post("api/role/list", {
                 orderByBodyList: [{
                     fieldName: "orderNumber",
                     sortType: "ASC"

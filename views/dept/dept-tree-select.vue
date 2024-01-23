@@ -56,7 +56,7 @@ export default {
          * 转换成树结构的操作会由 vue 的 computed 自动处理
          */
         function getTreeData() {
-            req.post("api/crud/dept/list", {}).then(data => {
+            req.post("api/dept/list", {}).then(data => {
                 listData.value = data.items;
             });
         }
