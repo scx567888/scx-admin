@@ -13,14 +13,9 @@ import CrudTableDeleteButton from "./crud/crud-table-delete-button.vue";
 import CrudTableEditButton from "./crud/crud-table-edit-button.vue";
 import EasyFormItem from "./easy/easy-form-item.vue";
 import EasyImage from "./easy/easy-image.vue";
-import EasyMonacoEditor from "./easy/easy-monaco-editor.vue";
 import EasySelect from "./easy/easy-select.vue";
-import EasyCKEditor from "./easy/easy-ckeditor.vue";
-import EasyCKEditorLazy from "./easy/easy-ckeditor-lazy.vue";
-import EasyTinymce from "./easy/easy-tinymce.vue";
 import EasyUpload from "./easy/easy-upload.vue";
 import EasyUploadList from "./easy/easy-upload-list.vue";
-import QRCode from "./qr-code/index.vue";
 import UserProfile from "./user-profile/index.vue";
 import ScxPanel from "./scx-panel.vue";
 import ScxPanelItem from "./scx-panel-item.vue";
@@ -39,16 +34,11 @@ const components = [
     CrudTable,
     CrudTableDeleteButton,
     CrudTableEditButton,
-    EasyCKEditor,
-    EasyCKEditorLazy,
     EasyFormItem,
     EasyImage,
-    EasyMonacoEditor,
     EasySelect,
-    EasyTinymce,
     EasyUpload,
     EasyUploadList,
-    QRCode,
     UserProfile,
     ScxPanel,
     ScxPanelItem,

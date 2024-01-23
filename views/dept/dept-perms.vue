@@ -94,7 +94,7 @@ export default {
             const key2 = pageTreeRef.value.getHalfCheckedKeys();
             const updateModel = deepCopy(props.data);
             updateModel.pagePerms = key1.concat(key2);
-            req.put("api/crud/dept", {updateModel}).then(data => {
+            req.put("api/dept", {updateModel}).then(data => {
                 ElMessage({
                     type: "success",
                     message: data.name + " : 更新成功!",
