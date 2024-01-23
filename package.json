@@ -22,7 +22,7 @@
     "@ckeditor/ckeditor5-build-classic": "^41.0.0",
     "@ckeditor/ckeditor5-code-block": "^41.0.0",
     "@ckeditor/ckeditor5-editor-classic": "^41.0.0",
-    "@ckeditor/ckeditor5-editor-inline": "^40.1.0",
+    "@ckeditor/ckeditor5-editor-inline": "^41.0.0",
     "@ckeditor/ckeditor5-essentials": "^41.0.0",
     "@ckeditor/ckeditor5-find-and-replace": "^41.0.0",
     "@ckeditor/ckeditor5-font": "^41.0.0",
