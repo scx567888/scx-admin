@@ -6,7 +6,8 @@
 
 <script>
 import {computed} from "vue";
-import {checkIDCard, checkPhoneNumber, getUUID, notBlank} from "scx-ui";
+import {getUUID, notBlank} from "scx-ui";
+import {checkIDCard, checkPhoneNumber,} from "../../util/index.js";
 import {useCrudContext} from "../../type/index.js";
 
 export default {

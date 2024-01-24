@@ -53,7 +53,7 @@
     "jsqr": "^1.4.0",
     "monaco-editor": "^0.45.0",
     "nprogress": "^0.2.0",
-    "scx-ui": "^1.4.2",
+    "scx-ui": "^1.4.4",
     "tinymce": "^6.8.2",
     "tinymce-i18n": "^24.1.15",
     "vue": "^3.3.11",
@@ -65,9 +65,5 @@
     "jszip": "^3.10.1",
     "vite": "^5.0.7",
     "vue-router": "^4.2.5"
-  },
-  "peerDependencies": {
-    "vue": "^3.3.11",
-    "xlsx": "^0.18.5"
   }
 }
