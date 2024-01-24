@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import {createExcel,  exportExcel} from "../../../../util/sheetjs-helper.js";
+import {createExcel, exportExcel} from "../../../../util/sheetjs-helper.js";
 import {download} from "scx-ui";
 import JSZip from "jszip";
 
