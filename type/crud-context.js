@@ -1,4 +1,5 @@
-import {deepCopy, exportExcel, focusFirstErrorElement, JsonVOError, notBlank, ScxReq} from "scx-ui";
+import {deepCopy, JsonVOError, notBlank, ScxReq} from "scx-ui";
+import {exportExcel, focusFirstErrorElement} from "../util/index.js";
 import {useScxReq, useScxUserInfo} from "scx-ui/vue-component";
 import {ScxIcon} from "scx-ui/vue-component/index.js";
 import {ElMessage, ElNotification} from "element-plus";
