@@ -51,7 +51,7 @@
     "dayjs": "^1.11.10",
     "element-plus": "^2.4.3",
     "jsqr": "^1.4.0",
-    "monaco-editor": "^0.45.0",
+    "monaco-editor": "^0.46.0",
     "nprogress": "^0.2.0",
     "scx-ui": "^1.4.4",
     "tinymce": "^6.8.2",
