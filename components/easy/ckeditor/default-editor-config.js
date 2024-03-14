@@ -1,7 +1,43 @@
-import {BlockQuote} from "@ckeditor/ckeditor5-block-quote";
+//基本功能
+import {Essentials} from "@ckeditor/ckeditor5-essentials";
+//基本样式 加粗 代码块 斜体 删除线等
 import {Bold, Code, Italic, Strikethrough, Subscript, Superscript, Underline} from "@ckeditor/ckeditor5-basic-styles";
-import {DocumentList, DocumentListProperties} from "@ckeditor/ckeditor5-list";
+//字体 大小 颜色等
+import {Font} from "@ckeditor/ckeditor5-font";
+//标题  <h1> <h2> 等等
 import {Heading} from "@ckeditor/ckeditor5-heading";
+//块引用 <blockquote>
+import {BlockQuote} from "@ckeditor/ckeditor5-block-quote";
+//列表  <ul> <ol> <li> 
+import {List, ListProperties} from "@ckeditor/ckeditor5-list";
+//移除 格式
+import {RemoveFormat} from "@ckeditor/ckeditor5-remove-format";
+//高亮 
+import {Highlight} from "@ckeditor/ckeditor5-highlight";
+//对齐
+import {Alignment} from "@ckeditor/ckeditor5-alignment";
+//查找替换
+import {FindAndReplace} from "@ckeditor/ckeditor5-find-and-replace";
+//缩进
+import {Indent, IndentBlock} from "@ckeditor/ckeditor5-indent";
+//代码块
+import {CodeBlock} from "@ckeditor/ckeditor5-code-block";
+//水平线
+import {HorizontalLine} from "@ckeditor/ckeditor5-horizontal-line";
+//链接
+import {AutoLink, Link, LinkImage} from "@ckeditor/ckeditor5-link";
+//媒体嵌入
+import {MediaEmbed} from "@ckeditor/ckeditor5-media-embed";
+//表格
+import {
+    Table,
+    TableCaption,
+    TableCellProperties,
+    TableColumnResize,
+    TableProperties,
+    TableToolbar,
+} from "@ckeditor/ckeditor5-table";
+//图片相关
 import {
     AutoImage,
     Image,
@@ -13,38 +49,16 @@ import {
     ImageUpload,
     PictureEditing,
 } from "@ckeditor/ckeditor5-image";
-import {Indent, IndentBlock} from "@ckeditor/ckeditor5-indent";
-import {AutoLink, Link, LinkImage} from "@ckeditor/ckeditor5-link";
-import {MediaEmbed} from "@ckeditor/ckeditor5-media-embed";
-import {Paragraph} from "@ckeditor/ckeditor5-paragraph";
-import {
-    Table,
-    TableCaption,
-    TableCellProperties,
-    TableColumnResize,
-    TableProperties,
-    TableToolbar,
-} from "@ckeditor/ckeditor5-table";
-import {Alignment} from "@ckeditor/ckeditor5-alignment";
-import {CodeBlock} from "@ckeditor/ckeditor5-code-block";
-import {Essentials} from "@ckeditor/ckeditor5-essentials";
-import {FindAndReplace} from "@ckeditor/ckeditor5-find-and-replace";
-import {Font} from "@ckeditor/ckeditor5-font";
-import {Highlight} from "@ckeditor/ckeditor5-highlight";
-import {HorizontalLine} from "@ckeditor/ckeditor5-horizontal-line";
-import {Mention} from "@ckeditor/ckeditor5-mention";
+//word 粘贴
 import {PasteFromOffice} from "@ckeditor/ckeditor5-paste-from-office";
-import {RemoveFormat} from "@ckeditor/ckeditor5-remove-format";
+//源码编辑
 import {SourceEditing} from "@ckeditor/ckeditor5-source-editing";
-import {SpecialCharacters, SpecialCharactersEssentials} from "@ckeditor/ckeditor5-special-characters";
-import {TextPartLanguage} from "@ckeditor/ckeditor5-language";
-import {TextTransformation} from "@ckeditor/ckeditor5-typing";
+//文本计数
 import {WordCount} from "@ckeditor/ckeditor5-word-count";
 
 const defaultEditorConfig = {
     language: "zh-cn",
     plugins: [
-        Alignment,
         Alignment,
         AutoImage,
         AutoLink,
@@ -52,7 +66,7 @@ const defaultEditorConfig = {
         Bold,
         Code,
         CodeBlock,
-        DocumentList,
+        List,
         Heading,
         Image,
         ImageCaption,
@@ -62,7 +76,6 @@ const defaultEditorConfig = {
         Italic,
         Link,
         MediaEmbed,
-        Paragraph,
         Table,
         TableToolbar,
         Essentials,
@@ -75,14 +88,11 @@ const defaultEditorConfig = {
         ImageUpload,
         IndentBlock,
         LinkImage,
-        DocumentListProperties,
-        Mention,
+        ListProperties,
         PasteFromOffice,
         PictureEditing,
         RemoveFormat,
         SourceEditing,
-        SpecialCharacters,
-        SpecialCharactersEssentials,
         Strikethrough,
         Subscript,
         Superscript,
@@ -90,8 +100,6 @@ const defaultEditorConfig = {
         TableCellProperties,
         TableColumnResize,
         TableProperties,
-        TextPartLanguage,
-        TextTransformation,
         Underline,
         WordCount,
     ],
@@ -117,7 +125,7 @@ const defaultEditorConfig = {
                 items: ["strikethrough", "subscript", "superscript", "code", "|", "removeFormat"],
             },
             "|",
-            "specialCharacters", "horizontalLine",
+            "horizontalLine",
             "|",
             "link", "insertImage", "insertTable",
             "|",
@@ -170,11 +178,6 @@ const defaultEditorConfig = {
             "imageStyle:inline", "imageStyle:wrapText", "imageStyle:breakText", "imageStyle:side", "|",
             "resizeImage",
         ],
-        insert: {
-            integrations: [
-                "insertImageViaUrl",
-            ],
-        },
     },
     list: {
         properties: {
@@ -196,27 +199,12 @@ const defaultEditorConfig = {
             },
         },
     },
-    mention: {
-        feeds: [
-            {
-                marker: "@",
-                feed: [
-                    "@apple", "@bears", "@brownie", "@cake", "@cake", "@candy", "@canes", "@chocolate", "@cookie", "@cotton", "@cream",
-                    "@cupcake", "@danish", "@donut", "@dragée", "@fruitcake", "@gingerbread", "@gummi", "@ice", "@jelly-o",
-                    "@liquorice", "@macaroon", "@marzipan", "@oat", "@pie", "@plum", "@pudding", "@sesame", "@snaps", "@soufflé",
-                    "@sugar", "@sweet", "@topping", "@wafer",
-                ],
-                minimumCharacters: 1,
-            },
-        ],
-    },
-    placeholder: "搞点内容 !!!",
+    placeholder: "请输入内容 !!!",
     table: {
         contentToolbar: [
             "tableColumn", "tableRow", "mergeTableCells", "tableProperties", "tableCellProperties", "toggleTableCaption",
         ],
     },
-
 };
 
 export {defaultEditorConfig};

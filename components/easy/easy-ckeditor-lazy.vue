@@ -6,7 +6,7 @@
 
 <script>
 import {onMounted, ref, watch} from "vue";
-import {createScxUploadAdapterPlugin} from "./ckeditor/plugins/ScxUploadAdapter.js";
+import {createScxUploadAdapterPlugin} from "./ckeditor/plugins/scx-upload-adapter.js";
 import {useScxFSS} from "scx-ui/vue-component";
 import {InlineEditor} from "@ckeditor/ckeditor5-editor-inline";
 import "@ckeditor/ckeditor5-build-classic/build/translations/zh-cn.js";

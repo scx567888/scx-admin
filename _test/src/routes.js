@@ -60,17 +60,7 @@ const routes = [
                             icon: "outlined-setting",
                             perms: [],
                         },
-                    },
-                    {
-                        path: "a2",
-                        name: "a2",
-                        component: () => import("./views/a/a2.vue"),
-                        meta: {
-                            title: "A2",
-                            icon: "outlined-file-search",
-                            perms: [],
-                        },
-                    },
+                    }
                 ],
             },
             {
