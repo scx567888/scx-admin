@@ -1,6 +1,6 @@
 import {BlockQuote} from "@ckeditor/ckeditor5-block-quote";
 import {Bold, Code, Italic, Strikethrough, Subscript, Superscript, Underline} from "@ckeditor/ckeditor5-basic-styles";
-import {DocumentList, DocumentListProperties} from "@ckeditor/ckeditor5-list";
+import {List, ListProperties} from "@ckeditor/ckeditor5-list";
 import {Heading} from "@ckeditor/ckeditor5-heading";
 import {
     AutoImage,
@@ -52,7 +52,7 @@ const defaultEditorConfig = {
         Bold,
         Code,
         CodeBlock,
-        DocumentList,
+        List,
         Heading,
         Image,
         ImageCaption,
@@ -75,7 +75,7 @@ const defaultEditorConfig = {
         ImageUpload,
         IndentBlock,
         LinkImage,
-        DocumentListProperties,
+        ListProperties,
         Mention,
         PasteFromOffice,
         PictureEditing,
@@ -170,11 +170,6 @@ const defaultEditorConfig = {
             "imageStyle:inline", "imageStyle:wrapText", "imageStyle:breakText", "imageStyle:side", "|",
             "resizeImage",
         ],
-        insert: {
-            integrations: [
-                "insertImageViaUrl",
-            ],
-        },
     },
     list: {
         properties: {
@@ -210,13 +205,12 @@ const defaultEditorConfig = {
             },
         ],
     },
-    placeholder: "搞点内容 !!!",
+    placeholder: "请输入内容 !!!",
     table: {
         contentToolbar: [
             "tableColumn", "tableRow", "mergeTableCells", "tableProperties", "tableCellProperties", "toggleTableCaption",
         ],
     },
-
 };
 
 export {defaultEditorConfig};

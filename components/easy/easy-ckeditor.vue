@@ -5,7 +5,7 @@
 <script>
 import CKEditor from "@ckeditor/ckeditor5-vue";
 import {computed} from "vue";
-import {createScxUploadAdapterPlugin} from "./ckeditor/plugins/ScxUploadAdapter.js";
+import {createScxUploadAdapterPlugin} from "./ckeditor/plugins/scx-upload-adapter.js";
 import {useScxFSS} from "scx-ui/vue-component";
 import {ClassicEditor} from "@ckeditor/ckeditor5-editor-classic";
 import {InlineEditor} from "@ckeditor/ckeditor5-editor-inline";
