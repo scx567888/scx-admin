@@ -199,20 +199,6 @@ const defaultEditorConfig = {
             },
         },
     },
-    mention: {
-        feeds: [
-            {
-                marker: "@",
-                feed: [
-                    "@apple", "@bears", "@brownie", "@cake", "@cake", "@candy", "@canes", "@chocolate", "@cookie", "@cotton", "@cream",
-                    "@cupcake", "@danish", "@donut", "@dragée", "@fruitcake", "@gingerbread", "@gummi", "@ice", "@jelly-o",
-                    "@liquorice", "@macaroon", "@marzipan", "@oat", "@pie", "@plum", "@pudding", "@sesame", "@snaps", "@soufflé",
-                    "@sugar", "@sweet", "@topping", "@wafer",
-                ],
-                minimumCharacters: 1,
-            },
-        ],
-    },
     placeholder: "请输入内容 !!!",
     table: {
         contentToolbar: [
